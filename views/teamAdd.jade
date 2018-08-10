@@ -1,0 +1,22 @@
+extends layout
+block append head
+   link(rel="stylesheet", href="/css/validata.css")
+   script(src="/js/jquery.validate.min.js")
+   script(src="/js/validate-zh.js")
+   script(src="/js/validate-form.js")
+block append body
+   .wrap.py-20
+      .title.fn-clear
+         b 添加球队
+         a(href="/team") 返回
+      form.my-50#teamAdd(method="post", action="/team/add")
+         .form-group
+            label.label 球队名称：
+            input(type="text",name="teamName")
+         .form-group
+            label.label 球队标志：
+            input(type="text",name="teamPic")
+         .form-group
+            label.label &nbsp;
+            button(type="submit") 提交
+            button(type="reset") 重置

@@ -1,0 +1,16 @@
+extends layout
+block append body
+	.wrap.py-20
+		.title.fn-clear
+			b 球队列表
+			a(href="/team/add") 添加球队
+		ul.team.fn-clear
+			each item, index in data
+				li
+					img(src=("/img/team/" + item.teamPic))
+					p=item.teamName
+					.mask
+					.btn
+						a(href="/team/edit?id=#{item.id}") 编辑
+						a(href="/team/delete?id=#{item.id}") 删除
+						i

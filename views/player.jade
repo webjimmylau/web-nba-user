@@ -1,0 +1,8 @@
+extends layout
+block append body
+	.wrap.py-20
+		ul.player.fn-clear
+			each item, index in data
+				li
+					img(src=("/img/player/" + item.playerPic))
+					p=item.playerName

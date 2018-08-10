@@ -1,0 +1,34 @@
+.form {
+    padding: 20px;
+}
+
+.form-group {
+    margin: 10px 0;
+}
+
+.form-group .label {
+    display: inline-block;
+    width: 160px;
+    margin-right: 5px;
+    text-align: right;
+}
+
+.form-group .label span {
+    margin-right: 5px;
+    font-family: 'sans-serif';
+    color: #f45;
+}
+
+.form-group label.error{
+    margin-left: 5px;
+    color:red;
+}
+
+.form-group button {
+    padding: 5px 10px;
+    margin-right: 10px;
+}
+
+.form-group input{
+    padding: 5px;
+}

@@ -1,0 +1,162 @@
+.banner{
+    width: 1000px;
+    height: 560px;
+}
+
+.banner ul{
+    position: absolute;
+    top: 0;
+}
+
+.banner li{
+    float: left;
+}
+
+.banner li a{
+    display: block;
+}
+
+.banner li img{
+    width: 1000px;
+    height: 560px;
+}
+
+.title{
+    padding: 10px;
+    margin-bottom: 20px;
+    line-height: 30px;
+    background: #ddd;
+}
+
+.title b{
+    float: left;
+    font-size: 14px;
+}
+
+.title a{
+    float: right;
+    padding: 0 10px;
+    color: #fff;
+    background: orangered;
+    border-radius: 2px;
+}
+
+.team{
+    padding: 20px;
+}
+
+.team li{
+    position: relative;
+    float: left;
+    width: 160px;
+    border-radius: 2px;
+    overflow: hidden;
+}
+.team li .mask{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .6;
+}
+
+.team li .btn{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.team li:hover .mask, .team li:hover .btn{
+    display: block;
+}
+
+.team li .btn a{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0 5px;
+    vertical-align: middle;
+    line-height: 50px;
+    color: #666;
+    background: #fff;
+    border-radius: 100%;
+}
+
+.team li .btn a:hover{
+    color: #fff;
+    background: orangered;
+}
+
+.team li .btn i {
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.team li img{
+    width: 160px;
+    height: 160px;
+    vertical-align: middle;
+}
+
+.team li p{
+    height: 40px;
+    font-family: "Microsoft YaHei";
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+    line-height: 40px;
+}
+
+
+.player{
+    background: #333;
+}
+.player li{
+    float: left;
+    width: 80px;
+    padding: 10px;
+}
+.player li img{
+    width: 60px;
+    margin: 10px;
+    vertical-align: middle;
+    border-radius: 100%;
+}
+.player li p{
+    font-family: "Microsoft YaHei";
+    font-size: 16px;
+    color: #ccc;
+    text-align: center;
+}
+
+/*swiper*/
+.pagination {
+    position: absolute;
+    z-index: 20;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+.swiper-pagination-switch {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    background: #555;
+    margin: 0 5px;
+    opacity: 0.8;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+.swiper-active-switch {
+    background: #fff;
+}
+/*end swiper*/

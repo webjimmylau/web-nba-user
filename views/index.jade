@@ -1,0 +1,15 @@
+extends layout
+block head
+	link(rel="stylesheet", href="/lib/swiper/idangerous.swiper2.7.6.css")
+	script(src="/lib/swiper/idangerous.swiper2.7.6.min.js")
+block append body
+	.wrap.py-20
+		.swiper-container.banner
+			ul.swiper-wrapper
+				each item, index in data
+					li.swiper-slide
+						a(href="javascript:;")
+							img(src=("/img/banner/" + item.bannerImg))
+			.pagination
+block append foot
+	script(src="/lib/swiper/swiper-config.js")
